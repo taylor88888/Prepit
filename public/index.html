@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prep! · Practice Before It Matters</title>
+  <meta name="description" content="Rehearse important moments with a simulated audience that reacts in real time." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="fonts/host-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header id="site-header" class="relative z-40"></header>
+
+  <main id="main">
+    <!-- Opening: text column + static shape assembly -->
+    <section class="page grid min-h-[calc(100svh-5rem)] items-center gap-10 pb-16 pt-6 md:pt-10 lg:grid-cols-[1.15fr_1fr] lg:gap-6" aria-labelledby="hero-title">
+      <div>
+        <p class="chip mb-7 bg-selection">
+          <i data-lucide="sparkles" class="h-4 w-4 text-accent" aria-hidden="true"></i>
+          <span data-i18n="tagline"></span>
+        </p>
+        <h1 id="hero-title" class="display-xl max-w-[11ch]" data-i18n="home_headline"></h1>
+        <p class="mt-7 max-w-xl text-lg leading-relaxed text-ink/80" data-i18n="home_subheadline"></p>
+        <div class="mt-10 flex flex-wrap items-center gap-x-5 gap-y-4">
+          <a href="setup.html" class="btn btn-primary btn-lg">
+            <span data-i18n="nav_start"></span>
+            <i data-lucide="arrow-right" class="h-5 w-5" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="relative mx-auto w-full max-w-[540px]" aria-hidden="true">
+        <svg viewBox="0 0 520 470" class="h-auto w-full" role="presentation" focusable="false">
+          <g stroke="#252b3a" stroke-width="3" stroke-linejoin="round">
+            <!-- mint base -->
+            <rect x="34" y="306" width="452" height="134" rx="30" fill="#252b3a" transform="translate(8 8)" />
+            <rect x="34" y="306" width="452" height="134" rx="30" fill="#9bf1cd" />
+            <!-- violet circle -->
+            <circle cx="188" cy="190" r="118" fill="#252b3a" transform="translate(8 8)" />
+            <circle cx="188" cy="190" r="118" fill="#6434df" />
+            <!-- amber arch -->
+            <path d="M300 306 V196 a92 92 0 0 1 184 0 V306 Z" fill="#252b3a" transform="translate(8 8)" />
+            <path d="M300 306 V196 a92 92 0 0 1 184 0 V306 Z" fill="#ffd05b" />
+            <!-- pink triangle -->
+            <polygon points="432,14 492,104 372,104" fill="#252b3a" transform="translate(6 6)" />
+            <polygon points="432,14 492,104 372,104" fill="#ff78c5" />
+            <!-- presentation card -->
+            <rect x="84" y="232" width="190" height="124" rx="16" fill="#252b3a" transform="translate(7 7)" />
+            <rect x="84" y="232" width="190" height="124" rx="16" fill="#ffffff" />
+            <rect x="106" y="256" width="86" height="12" rx="6" fill="#6434df" stroke="none" />
+            <rect x="106" y="282" width="146" height="9" rx="4.5" fill="#b8b6c5" stroke="none" />
+            <rect x="106" y="302" width="120" height="9" rx="4.5" fill="#b8b6c5" stroke="none" />
+            <rect x="106" y="322" width="64" height="9" rx="4.5" fill="#b8b6c5" stroke="none" />
+            <!-- audience heads on the base -->
+            <circle cx="336" cy="372" r="22" fill="#ffffff" />
+            <circle cx="400" cy="372" r="22" fill="#ff78c5" />
+            <circle cx="464" cy="372" r="22" fill="#ffffff" />
+            <!-- sparse confetti -->
+            <circle cx="56" cy="62" r="13" fill="#ffd05b" />
+            <rect x="300" y="36" width="22" height="22" rx="5" fill="#9bf1cd" transform="rotate(14 311 47)" />
+          </g>
+        </svg>
+      </div>
+    </section>
+  </main>
+
+  <script src="vendor/lucide.min.js"></script>
+  <script type="module" src="js/home.js"></script>
+</body>
+</html>
